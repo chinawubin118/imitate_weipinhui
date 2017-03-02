@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.lotte.imitate_weipinhui.ui.ChangeProfileActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="修改个人资料"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/divider0"
+        style="@style/divider"
+        android:layout_below="@+id/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_change_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider0"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/text_item"
+            android:layout_centerVertical="true"
+            android:text="修改头像" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/default_header" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        style="@style/divider"
+        android:layout_below="@+id/rl_change_header"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_change_nickname"
+        style="@style/text_item"
+        android:layout_below="@+id/divider1"
+        android:text="修改昵称" />
+
+    <View
+        android:id="@+id/divider2"
+        style="@style/divider"
+        android:layout_below="@+id/tv_change_nickname"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_login"
+        style="@style/text_item"
+        android:layout_below="@+id/divider2"
+        android:text="登录" />
+
+    <View
+        android:id="@+id/divider3"
+        style="@style/divider"
+        android:layout_below="@+id/tv_login"
+        android:layout_marginLeft="16dp"/>
+
+    <TextView
+        android:id="@+id/tv_un_login"
+        style="@style/text_item"
+        android:layout_below="@+id/divider3"
+        android:text="退出登录" />
+
+    <View
+        android:id="@+id/divider4"
+        style="@style/divider"
+        android:layout_below="@+id/tv_un_login"
+        android:layout_marginLeft="16dp"/>
+</RelativeLayout>
